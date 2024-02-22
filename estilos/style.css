@@ -1,0 +1,409 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.842),rgba(0, 0, 0, 0.712)), url(../imagens/main01.jpg);
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;        
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+}
+
+/* -------------------------------------------------------- */
+
+/* HEADER */
+header {
+    padding: 1.3rem 8%;
+    background-image: linear-gradient( to right, rgb(14, 0, 41), rgb(0, 15, 102), rgb(16, 0, 73), rgb(2, 2, 66) );
+}
+
+/* ------ HEADER MOBILE ------ */
+.menu-mobile {
+    background-image: linear-gradient( to right, rgb(14, 0, 41), rgb(0, 0, 0), rgb(7, 0, 32), rgb(2, 2, 66) );
+    height: 100vh;
+    position: fixed; /*O MENU FICARÁ FIXO E NAO VAI DESCER A PAGINA*/
+    top: 0; /*O MENU VAI DESCER*/
+    right: 0; /* ALINHAR AO LADO DIREITO*/
+    z-index: 99999; /*O MENU MOBILE FICARÁ POR CIMA DE TODOS OS ELEMENTOS com valor menor que o 99999*/
+    width: 0%; /*OCUPAMENTO DA TELA*/
+    overflow: hidden;
+    transition: .5s; /*VELOCIDADE DA ABERTURA DO MENU MOBILE*/
+}
+
+.menu-mobile.abrir-menu { /*CLASS CRIADA NO JAVASCRIPT ABRIR-MENU*/
+    width: 100%; /*OCUPAMENTO DA TELA*/
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu {
+    display: block;
+}
+
+.menu-mobile nav ul {
+    text-align: right;
+}
+
+.menu-mobile nav ul a li {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px;
+    display: block;
+}
+
+.btn-abrir-menu { /*MENU HAMBURGUER*/
+    display: none;
+}
+
+.btn-abrir-menu i {
+    color: #fff;
+    font-size: 25px;
+}
+
+.btn-fechar {
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar i {
+    color: #fff;
+    font-size: 30px;
+
+}
+
+header .menu-mobile nav ul a li:hover {
+    background-color: blue;
+    color: #000;
+}
+
+.overlay-menu {
+    background-color: #000000a7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+/*------------------------------------ */
+
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-header {
+    width: 110px;
+}
+
+/* MENU DE NAVEGAÇÃO */
+.menu-desktop {
+    display: flex;
+    gap: 1.8rem;
+}
+
+/* FONTES DO MENU DE NAVEGAÇÃO */
+.menu-desktop a {
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* BOTÕES DE MIDIAS SOCIAIS */
+.midias-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.midias-sociais i {
+    color: #000;
+    font-size: 1.1rem;
+    padding: 10px;
+    background-image: linear-gradient( to right, rgb(2, 12, 155), rgb(120, 134, 255), rgb(255, 255, 255), rgb(255, 255, 255) );
+    border-radius: 50%;
+}
+
+/* MAIN */
+
+main {
+    padding: 1.3rem 8%;
+    height: 100vh;
+}
+
+main {
+    background: linear-gradient(rgba(0, 0, 0, 0.842),rgba(0, 0, 0, 0.712)), url(../imagens/main01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.conteudo-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.texto-main {
+    text-align: center;
+    color: #fff;
+}
+
+.texto-main h1 {
+    font-size: 50px;
+    
+}
+
+.texto-main h2 {
+    font-size: 20px;
+}
+
+/* SOBRE */
+
+.sessao-sobre {
+    padding: 1.3rem 8%;
+    margin-bottom: 20px;
+}
+
+.sessao-sobre {
+    background-color: rgba(5, 114, 187, 0.301);
+}
+
+section h2 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 70px;
+    color: #fff;
+
+}
+
+.sobre img {
+    width: 250px;
+    margin-bottom: 60px;
+}
+
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-section h3 { /*TEXTO OLA ME CHAMO EDVALDO ...*/
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;
+
+}
+
+
+.texto-section p {
+    margin: 0 30px;
+    margin-bottom: 100px;
+    line-height: 30px;
+    text-indent: 50px;
+    text-align: justify;
+    color: #fff;
+}
+
+
+
+/* HABILIDADES */
+
+.sessao-habilidades {
+    padding: 1.0rem 4%;
+}
+
+.sessao-habilidades h2 {
+    color: #fff;
+    font-size: 40px;
+    margin-top: 90px;
+    margin-bottom: 60px;
+}
+
+.habilidades-pai {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.habilidades-filhos {
+    padding: 50px; /*Cima e Baixo da DIV filho*/
+    width: 260px; /*Lados da DIV filho*/
+    background-color: rgba(5, 114, 187, 0.301);
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.habilidades-filhos i {
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.habilidades-filhos h4 {
+    font-size: 30px;
+    margin-bottom: 6px;
+    color: #fff;
+}
+
+.habilidades-filhos p {
+    font-size: 20px;
+    color: #fff;
+}
+
+/* PROJETOS */
+
+.projetos h2 {
+    padding: 10px 0px 40px 0;
+    color: #fff;
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.projetos {
+    padding: 1.0rem 4%;
+    background-color: rgba(5, 114, 187, 0.301);
+
+    
+}
+
+.todos-projetos {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-bottom: 60px;
+    
+}
+
+.projeto-01 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(5, 114, 187, 0.815);
+    width: 300px; /*LIMITE DO QUADRADO DOS PROJETOS*/
+    border: none;
+    border-radius: 20px;
+}
+
+.projeto-01 h4 {
+    color: #fff;
+    padding: 10px;
+}
+
+.projeto-01 p {
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+}
+
+.projeto-01 button {
+    background-color: gold;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 1.3rem 8%;
+    background-color: rgba(2, 17, 22, 0.507);
+    margin-top: 30px;
+}
+
+.div-footer {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-footer p {
+    color: rgba(236, 224, 224, 0.795);
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 15px;
+}
+
+.linha {
+    border: 1px solid rgb(3, 3, 3);
+}
+
+.abaixo-linha {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.abaixo-linha p {
+    font-weight: 200;
+    color: rgba(236, 224, 224, 0.795);
+    font-family: "Poppins", sans-serif;
+    
+} 
+
+.div-footer p {
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+}
+
+
+.midias-sociais-footer i {
+        color: #000;
+        font-size: 1.3rem;
+        padding: 10px;
+        background-image: linear-gradient( to right, rgb(2, 12, 155), rgb(120, 134, 255), rgb(255, 255, 255), rgb(255, 255, 255) );
+        border-radius: 50%;
+        border: 1px solid black;
+    }
+
+#btn-top {
+    color: #fff;
+    font-size: 40px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="estilos/style.css">
+    <!-- Media Query -->
+    <link rel="stylesheet" href="estilos/mediaquery.css">
+    <!--Biblioteca de Icones-->
+    <script src="https://kit.fontawesome.com/43d4f8c7b9.js" crossorigin="anonymous"></script>
+    <!-- JS Principal -->
+    <script src="index.js" defer></script>
+    <title>Portifólio</title>
+</head>
+
+<body>
+    <header id="inicio-site">
+        <nav class="cabecalho">
+        <!-- Logomarca da Empresa -->
+        <a href="#"><img class="img-header" src="imagens/logoportifolio.png" alt="Logomarca da Empresa"></a>
+        
+        <!-- Menu de navegações -->
+        <ul class="menu-desktop">
+            <a href="#home"><li>Home</li></a>
+            <a href="#sobre"><li>Sobre</li></a>
+            <a href="#habilidades"><li>Habilidades</li></a>
+            <a href="#projeto"><li>Projetos</li></a>
+            <a href="#contato"><li>Contatos</li></a>
+        </ul>
+        
+        <!-- Mídias Sociais -->
+        <div class="midias-sociais">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+       
+        <!-- MENU MOBILE -->
+        <div class="btn-abrir-menu" id="btn-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+            <div class="btn-fechar">
+                <i class="fa-solid fa-xmark"></i> 
+            </div>
+            
+            <nav>
+                 <ul>
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#sobre"><li>Sobre</li></a>
+                    <a href="#habilidades"><li>Habilidades</li></a>
+                    <a href="#projeto"><li>Projetos</li></a>
+                    <a href="#contato"><li>Contatos</li></a>
+                </ul>
+            </nav>
+        
+        </div><!--menu-mobile-->
+       
+        <div class="overlay-menu" id="overlay-menu">
+            <!-- DIV CRIADA PARA ESCURECER O SITE AO ABRIR O MENU MOBILE -->
+        </div>
+    </header>
+    
+    <main id="home">
+        <div class="conteudo-main">
+            <div class="texto-main">
+                <h1>EDVALDO JÚNIOR</h1>
+                <h2>Front-End Developer</h2>
+            </div>
+            
+            <img src="imagens/bg001.png" alt="Foto ilustrativa">
+        
+        </div>
+    </main>
+    
+    <section class="sessao-sobre" id="sobre">
+        <h2>SOBRE MIM</h2>
+        <div class="sobre">
+            <img src="imagens/junior2.png" alt="Minha foto" srcset="">
+            <div class="texto-section">
+                <h3>Olá! Me chamo EDVALDO JÚNIOR</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error earum enim maxime quos nobis non ducimus unde fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam natus animi eius harum, praesentium suscipit at aliquid architecto eaque nemo labore itaque rem. Accusamus ea a nobis nihil? Aut, ratione.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sessao-habilidades" id="habilidades">
+        <h2>MINHAS HABILIDADES</h2>
+        
+            <div class="habilidades-pai">
+                
+                <div class="habilidades-filhos">
+                    <i class="fa-solid fa-globe"></i>
+                    <h4>WebSite</h4>
+                    <p>Desenvolvimento de sites simples e profissionais</p>
+                </div>
+            
+                <div class="habilidades-filhos">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <h4>WebSite</h4>
+                    <p>Desenvolvimento de sites simples e profissionais</p>
+                </div>
+
+                <div class="habilidades-filhos">
+                    <i class="fa-brands fa-wordpress"></i>
+                    <h4>WebSite</h4>
+                    <p>Desenvolvimento de sites simples e profissionais</p>
+                </div>
+
+
+
+            </div>
+
+
+    </section>
+
+
+    <section class="projetos" id="projeto">
+        <h2>MEUS PROJETOS</h2>
+        <div class="todos-projetos">
+
+            <div class="projeto-01">
+                <h4>Ferrari</h4>
+                <img src="imagens/ferrari.png" alt="Ferrari">
+                <p>Site contendo a história da ferrari e mostrando seus belos carros</p>
+                <button>ACESSAR</button>
+            </div>
+
+            <div class="projeto-01">
+                <h4>Lamborguini</h4>
+                <img src="imagens/lamborguini.png" alt="Lamborguini">
+                <p>Conheça a inspiração para os nomes da cada carro lançado.</p>
+                <button>ACESSAR</button>
+            </div>
+
+            <div class="projeto-01">
+                <h4>Man City</h4>
+                <img src="imagens/city.png" alt="City">
+                <p>A ascenção do Manchester City. Quando se tornou um dos princiais clubes do futebol mundial.</p>
+                <button>ACESSAR</button>
+            </div>
+
+            <div class="projeto-01">
+                <h4>Flamengo</h4>
+                <img src="imagens/flamengo.png" alt="Flamengo">
+                <p>O maior Clube do Brasil e suas principais conquitas ao longo dos anos.</p>
+                <button>ACESSAR</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="div-footer" id="contato">
+        <a href="#"><img class="img-header" src="imagens/logoportifolio.png" alt="Logomarca da Empresa"></a>
+        <p>Com novas tecnologias surgem novos Devs</p>
+        </div>
+
+        <div class="linha"></div>
+
+        <div class="abaixo-linha">
+            <p>Desenvolvido por @Edvaldo Junior</p>
+
+            <div class="midias-sociais-footer">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+
+        </div>
+        <!-- Botão Voltar ao Topo -->
+        <a id="btn-top" href="#inicio-site"><i class="fa-solid fa-square-caret-up"></i></a>
+
+
+    </footer>
+
+
+
+</body>
+</html>
