@@ -98,14 +98,42 @@
     section .todos-projetos {
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
         align-items: center;
         gap: 2rem;
     } 
 
+    
+
     /* FOOTER */
+
+    .div-footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contatos h4 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .contatos-filho p {
+        font-size: 15px;
+    }
+    .contatos-filho {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
     .abaixo-linha {
         display: flex;
         flex-direction: column;
+    }
+
+    .abaixo-linha {
+        font-size: 14px;
     }
     .midias-sociais-footer {
         font-size: 1rem;

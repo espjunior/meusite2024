@@ -18,8 +18,9 @@ body {
 
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /*SUAVIZAR A ROLAGEM DO SITE*/
 }
+
 h1 {
     font-family: "Poppins", sans-serif;
     font-weight: 800;        
@@ -63,9 +64,10 @@ header {
     text-align: right;
 }
 
+/* FONTES DO MENU MOBILE */
 .menu-mobile nav ul a li {
     color: #fff;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 300;
     padding: 20px;
     display: block;
@@ -122,13 +124,20 @@ header .menu-mobile nav ul a li:hover {
 /* MENU DE NAVEGAÇÃO */
 .menu-desktop {
     display: flex;
-    gap: 1.8rem;
+    gap: 2.8rem;
 }
 
 /* FONTES DO MENU DE NAVEGAÇÃO */
 .menu-desktop a {
     color: #fff;
     font-size: 0.9rem;
+    display: inline-block; /*Converter para o transform do hover funcionar*/
+    transition: .6s;
+}
+
+.menu-desktop a:hover {
+    color: #ffffffe8;
+    transform: scale(1.7); /*Converter para o transform do hover funcionar*/
 }
 
 /* BOTÕES DE MIDIAS SOCIAIS */
@@ -145,6 +154,14 @@ header .menu-mobile nav ul a li:hover {
     padding: 10px;
     background-image: linear-gradient( to right, rgb(2, 12, 155), rgb(120, 134, 255), rgb(255, 255, 255), rgb(255, 255, 255) );
     border-radius: 50%;
+}
+
+.midias-sociais i:hover {
+    color: #fff;
+    background-image: linear-gradient( to right, rgb(2, 12, 155), rgb(31, 0, 145));
+    border: 1px;
+    display: inline-block; /*Converter para o transform do hover funcionar*/
+    transition: .2s;
 }
 
 /* MAIN */
@@ -229,7 +246,7 @@ section h2 {
     margin: 0 30px;
     margin-bottom: 100px;
     line-height: 30px;
-    text-indent: 50px;
+        text-indent: 50px;
     text-align: justify;
     color: #fff;
 }
@@ -301,42 +318,48 @@ section h2 {
     
 }
 
-.todos-projetos {
+.todos-projetos { /*CONTAINER PAI*/
     display: flex;
     justify-content: space-around;
-    gap: 2rem;
+    align-items: center;
+    gap: 90px;
     margin-bottom: 60px;
     
 }
 
+/* edicao aqui */
 .projeto-01 {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    text-align: center;
     justify-content: center;
     align-items: center;
-
-    background-color: rgba(5, 114, 187, 0.815);
-    width: 300px; /*LIMITE DO QUADRADO DOS PROJETOS*/
-    border: none;
-    border-radius: 20px;
+    padding: 35px; /*Cima e Baixo da DIV filho*/
+    width: 260px; /*Lados da DIV filho*/
+    background-color: rgba(5, 114, 187, 0.301);
+    border-radius: 40px;
+    box-shadow: 10px 0 0 2px black;
 }
+
 
 .projeto-01 h4 {
     color: #fff;
+    font-size: 25px;
     padding: 10px;
+    font-weight: 200;
 }
 
 .projeto-01 p {
     color: #fff;
     text-align: center;
-    padding: 8px;
+    padding: 10px;
 }
 
 .projeto-01 button {
     background-color: gold;
     border: none;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
+    margin-top: 40px;
     margin-bottom: 10px;
     cursor: pointer;
     font-weight: bold;
@@ -366,8 +389,34 @@ footer {
     font-size: 15px;
 }
 
+.contatos {
+    color: #fff;
+    display: block;
+}
+
+.contatos h4 {
+    color: rgba(236, 224, 224, 0.795);
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+}
+
+.contatos-filho {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contatos-filho p {
+    color: rgba(236, 224, 224, 0.795);
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 15px;
+}
+
 .linha {
     border: 1px solid rgb(3, 3, 3);
+    margin-top: 10px;
 }
 
 .abaixo-linha {
@@ -398,12 +447,31 @@ footer {
         background-image: linear-gradient( to right, rgb(2, 12, 155), rgb(120, 134, 255), rgb(255, 255, 255), rgb(255, 255, 255) );
         border-radius: 50%;
         border: 1px solid black;
-    }
+}
 
-#btn-top {
+.midias-sociais-footer i:hover {
     color: #fff;
+    background-image: linear-gradient( to right, rgb(2, 12, 155), rgb(31, 0, 145));
+    border: 1px;
+    display: inline-block; /*Converter para o transform do hover funcionar*/
+    transition: .2s;
+}
+
+
+/* ------------------------------------ */
+
+
+/*BOTÃO VOLTAR AO TOPO  */
+#btn-top {
+    color: #ffffff2c;
     font-size: 40px;
     position: fixed;
     right: 10px;
     bottom: 10px;
+    transition: .6s; /*TEMPO PARA O BOTÃO ACENDER*/
 }
+
+#btn-top:hover {
+    color: #ffffffa6;
+}
+/* --------------------- */
